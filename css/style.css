@@ -1,0 +1,386 @@
+@keyframes pageload {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+    background-repeat: no-repeat;
+    background-color: #C3C6BF;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	animation-name: pageload;
+	animation-duration: 0.5s;
+}
+
+/** Buttons **/
+
+.btn {
+	margin-top: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 0px;
+}
+
+.btn-default {
+	background-color: transparent;
+	border-color: #fff;
+}
+
+.btn-link, .btn-link.focus, .btn-link:focus {
+	background-color: transparent;
+	border-color: transparent;
+	text-decoration: none;
+	color: #fff;
+}
+
+.btn-link:hover {
+	color: #555;
+	text-decoration: none;
+}
+
+/** Carousel **/
+
+.carousel-control.right, .carousel-control.left {
+	background-image: none;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+    text-shadow: none;
+    margin-top: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+/** Page Styles **/
+
+.page {
+  padding: 60px 0;
+}
+
+.page h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/** Text Styles **/
+
+.heading {
+	font-weight: 700;
+	font-size: 64px;
+}
+
+p {
+	font-weight: 200;
+	font-size: 20px;
+}
+
+.list-unstyled {
+	font-weight: 200;
+	font-size: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+
+strong {
+	font-weight: 400;
+}
+
+a {
+	color: #555;
+}
+
+a:focus, a:hover {
+	text-decoration: none;
+	color: #E7E8E4;
+}
+
+/** Nav Bar **/
+
+.navbar {
+	border-radius: 0;
+}
+
+.navbar-default .navbar-nav .active a, .navbar-default .navbar-nav .active a:focus, .navbar-default .navbar-nav .active a:hover {
+	background-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+	color: #555;
+	font-weight: 700;
+}
+
+.navbar-default .navbar-nav .active a {
+	font-weight: 700;
+	background-color: transparent;
+}
+
+.navbar-default {
+	background-color: rgba(255,255,255,.9);
+	border: none;
+}
+
+.navbar-brand {
+	background-image: url(../img/LizWood.svg);
+	background-repeat: no-repeat;
+	height: auto;
+	width: 300px;
+	padding-left: 80px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 22px;
+	letter-spacing: 3px;
+}
+
+/** Welcome Page **/
+
+.intro {
+	margin-top: 200px;
+}
+
+/** Mission Statement **/
+
+.mission-statement {
+	font-size: 18px;
+	margin-left: 4%;
+}
+
+.white {
+	color: white;
+	letter-spacing: 2px;
+}
+
+/** About Page **/
+
+.img-lizwood {
+	margin-top: 20px;
+	padding: -20px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about-paragraph {
+	margin-left: 4%;
+	padding-top: 10px;
+	font-size: 18px;
+}
+
+.panel {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.panel-default {
+	border-color: transparent;
+}
+
+.panel-default>.panel-heading {
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.panel-group {
+	padding-top: 3%;
+}
+
+.panel-title {
+	font-size: 20px;
+}
+
+@media (max-width: 768px){
+	.img-lizwood {
+		width: 400px;
+		padding: 20px;
+		margin-top: 0px;
+	}
+	.philosophy {
+		margin-right: 15%;
+		margin-left: 10%;
+	}
+	.education {
+		margin-left: 15%;
+		margin-right: 10%;	
+	}
+}
+
+/** Resume Page **/
+
+.skills {
+	padding-top: 60px;
+}
+
+.interests {
+	text-align: right;
+}
+
+#resume {
+	background-color: #E7E8E4;
+}
+
+.in-school {
+	padding-top: 95px;
+	text-align: right;
+}
+
+.in-school h4, .experience h4{
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+
+.in-school h5, .experience h5{
+	font-size: 15px;
+	color: #A1A5A1;
+	letter-spacing: 1px;
+}
+
+.in-school p, .experience p{
+	font-size: 15px;
+}
+
+.experience {
+	padding-top: 30px;
+}
+
+.school-list, .experience-list {
+	padding-top: 10px;
+}
+
+.school-list li, .experience-list li{
+	padding-bottom: 35px;
+	line-height: 2px;
+}
+
+/** Photography Page **/
+
+#photography {
+	background-color: #E7E8E4;
+	padding-bottom: 8%;
+}
+
+/** Tabs **/
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+	background-color: #333;
+	color: #E7E8E4;
+	border: none;
+}
+
+.nav-tabs>li>a {	
+	border-radius: 0;
+	border: none;
+}
+
+.nav-tabs>li>a:hover, .nav>li>a:focus, .nav>li>a:hover {
+	border-color: transparent;
+	background-color: transparent;
+	color: #E7E8E4;
+}
+
+.tab-pane {
+	padding: 2%;
+}
+
+.tab-pane img {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.tab-pane p, .tab-pane h2, .tab-pane h3, .tab-pane h4 {
+	color: #E7E8E4;
+	text-align: left;
+}
+
+.tab-pane h3 {
+	padding-top: 2%;
+	font-size: 20px;
+}
+
+.tab-pane h4 {
+	font-size: 18px;
+}
+
+#description {
+	padding-top: 2%;
+	padding-bottom: 2%;
+}
+
+#aspects {
+	padding-top: 4%;
+	padding-bottom: 3%;
+}
+
+#caption {
+	padding-bottom: 5%;
+}
+
+#mrp p {
+	font-size: 16px;
+}
+
+#interaction p {
+	font-size: 14px;
+}
+
+#panel-background {
+	background-color: #333;
+	padding-bottom: 8%;
+}
+
+#mrp-video {
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+/** Media Queries **/
+
+@media (max-width: 768px){
+	.intro {
+		margin-top: 80px;
+	}
+	.heading {
+		font-size: 48px;
+	}
+	.navbar-default {
+	background-color: rgba(255,255,255,.8);
+	border-color: none;
+	text-align: center;
+	}
+	.navbar-default .navbar-nav>li>a:hover {
+	color: #555;
+	background-color: #fff;
+	}
+	.navbar-default .navbar-nav .active a:hover {
+	color: #555;
+	background-color: #fff;
+	}
+	.nav-tabs {
+    font-size: 12px;
+    text-align: center;
+	}
+}
+
+@media (min-width: 992px){
+	.carousel-inner img {
+	width: 70%;
+	margin: auto;
+	}
+}
+
+
