@@ -25,7 +25,7 @@
     </div>
     <div class="collapse navbar-collapse" id="collapsemenu">
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="home.html">Home</a></li>
+      <li><a href="home.html">Back to Home <span class="glyphicon glyphicon-chevron-left"></a></li>
       <li><a href="#tech">Tech</a></li>
       <li><a href="#design">Design</a></li>
       <li><a href="#photography">Photo</a></li>
@@ -217,6 +217,71 @@
         </div><!-- physical computing panel -->
 
         <div role="tabpanel" class="tab-pane fade in" id="sentiment">
+
+            <div class="col-sm-4 col-xs-12">
+              <h3>Twitter API</h3>
+              <hr>
+              <p>Working with my thesis partner, we created a sentiment analysis of Twitter using colour as a test for our thesis project.</p>
+              <p>An Arduino was used to connect a string of LED lights to my laptop. We wrote the program in Processing in order to use Java and tap into Twitter's API that grabs a handful of tweets from the pipeline.</p>
+              <p>We mapped specific keywords to several different colours that would express sentiment towards the Toronto Raptors basketball team (they were in the playoffs at the time). When we ran the program, the LED's would light up based on the tweets coming in.</p><br>
+            </div><!-- first column -->
+
+            <div class="col-sm-8 col-xs-12">
+              <div class="row">
+                <div class="col-xs-6">
+                  <h3><small>Sample Code</small></h3>
+                  <br>
+                  <pre>
+  //** search results come here **/// 
+  public void onStatus(Status status) {
+    println("@" + status.getUser().getScreenName() + " - " + status.getText());
+    String tweet = status.getText();
+    tweet = tweet.toLowerCase();
+    if ( tweet.contains("let's go raptors" ) || tweet.contains("go raptors") || tweet.contains("love") || tweet.contains("#wethenorth")) {
+       println("ONE-Purple");
+       myPort.write('1');
+       // send Arduino a message to change its color
+    }
+    if ( tweet.contains("victory") || tweet.contains("yes") || tweet.contains("we got this") || tweet.contains("good")) {
+       println("TWO-Blue");
+       myPort.write('2');
+       // send Arduino a message to change its color
+    }
+     if ( tweet.contains("Raptors Lead") || tweet.contains("winners") || tweet.contains("Pacers lose") || tweet.contains("Raptors Lose")) {
+     println("THREE-Turquoise");
+     myPort.write('3');
+       // send Arduino a message to change its color
+    }
+     if ( tweet.contains("Game 7") || tweet.contains("fuck") || tweet.contains("damn")) {
+     println("FOUR-Green");
+     myPort.write('4');
+       // send Arduino a message to change its color
+    }
+     if ( tweet.contains("losers") || tweet.contains("turnovers") || tweet.contains("Pacers win") || tweet.contains("Raptors lose")) {
+     println("FIVE-Yellow");
+     myPort.write('5');
+       // send Arduino a message to change its color
+    }
+     if ( tweet.contains("stop") || tweet.contains("bad") || tweet.contains("sucks") || tweet.contains("chokers")) {
+     println("SIX-Orange");
+     myPort.write('6');
+       // send Arduino a message to change its color
+    }
+     if ( tweet.contains("#wethegold") || tweet.contains("worst") || tweet.contains("shit") || tweet.contains("hate")) {
+     println("SEVEN-Red");
+     myPort.write('7');
+       // send Arduino a message to change its color
+    }
+  } 
+                  </pre>
+                </div><!-- inner first column -->
+
+                <div class="col-xs-6">
+                  <h3><small>Diagram</small></h3>
+                  <img src="img/sentiment-diagram.png" class="img-responsive">
+                </div><!-- inner second column -->
+              </div><!-- inner row -->
+            </div><!-- second column -->
           
         </div><!-- sentiment analysis panel -->
 
