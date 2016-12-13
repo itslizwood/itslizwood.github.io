@@ -8,20 +8,90 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700" rel="stylesheet">
 
-	<title>Welcome</title>
+	<title>Liz Wood</title>
 </head>
-<body background="img/lizheader.svg" class="background">
-   	<div class="intro">
-   	<div class="content container">
-   		<div class="row">
-   		<div class="col-md-5 col-sm-6 col-md-push-6 col-sm-push-4 col-xs-9 col-xs-push-1">
-	   		<h1 class="heading text-uppercase">Liz Wood</h1>
-			<p class="text-uppercase">I am a designer researching human emotion within the realm of technology.</p>
-			<a class="btn btn-default" href="home.html" role="button"><h4>ENTER</h4></a>
-   		</div>
-		</div>
-	</div>
-	</div>
+
+<body data-spy="scroll" data-target=".navbar-fixed-top">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+ <div class="container">
+ 	<div class="navbar-header">
+ 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsemenu">
+ 		<span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+ 		</button>
+ 		<a href="index.html" class="navbar-brand">Liz Wood</a>
+ 	</div>
+ 	<div class="collapse navbar-collapse" id="collapsemenu">
+ 	<ul class="nav navbar-nav navbar-right">
+ 		 <li><a href="#about-heading">About</a></li>
+ 		 <li><a href="#work">Work</a></li>
+  	 <li><a href="#contact">Contact</a></li>
+  	</ul>
+ 	</div>
+ </div>
+</nav>
+
+<div class="page" id="about-heading">
+    <div class="content container">
+    	<div class="row">
+
+    		<div class="col-md-10 col-md-offset-1">
+    			<h1 class="text-center">I am a designer researching human emotion within the realm of technology.</h1>
+    		</div>
+    		
+    	</div> <!-- row 1-->
+
+    	<div class="row">
+    		<div class="text-center">
+	      		<a class="btn btn-default" href="about.html" role="button"><p class="text-uppercase"><small>Learn More</small></p></a>     
+	    	</div> <!-- button -->
+    	</div><!-- row 2-->
+      	
+    </div><!-- content container -->
+  </div><!-- about page -->
+
+  <div class="page" id="work">
+    <div class="content container">
+
+      <h2 class="text-uppercase">Projects</h2>
+
+      <div class="row">
+      	<div class="col-sm-4 col-xs-12">
+      		<a href="wireframe.html"><img src="img/portfolio-icon.jpg" class="img-responsive"></a>
+      	</div>
+      	<div class="col-sm-4 col-xs-12">
+      		<a href="prototype.html"><img src="img/mrp-icon.jpg" class="img-responsive"></a>
+      	</div>
+      	<div class="col-sm-4 col-xs-12">
+      		<a href="build.html"><img src="img/robodog-icon.jpg" class="img-responsive"></a>
+      	</div>
+      	
+      </div> <!-- row -->     
+
+    </div><!-- content container -->
+  </div><!-- projects page -->
+ 
+
+  <div class="page" id="contact">
+    <div class="content container">
+
+    <h2 class="text-uppercase">Contact</h2>
+
+    <p class="text-uppercase text-center" id="email-caption">Email me at: itslizwood@gmail.com</p>
+
+      <div class="row">
+
+        <a href="https://ca.linkedin.com/in/itslizwood"><img src="img/social-icons-01.png" alt="Liz Wood LinkedIn Profile"></a>
+        <a href="https://github.com/itslizwood"><img src="img/social-icons-02.png" alt="Liz Wood Github Profile"></a>
+
+      </div><!-- row -->
+    </div><!-- content container -->
+  </div><!-- contact page -->
+
+
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
